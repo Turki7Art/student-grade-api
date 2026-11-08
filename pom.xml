@@ -31,7 +31,7 @@
 <artifactId>spring-boot-starter-test</artifactId>
 <scope>test</scope>
 </dependency>
-<!-- SLF4J + Log4j2 (Lab 6) -->
+<!-- SLF4J + Log4j2 -->
 <dependency>
 <groupId>org.springframework.boot</groupId>
 <artifactId>spring-boot-starter-log4j2</artifactId>
@@ -39,10 +39,15 @@
 </dependencies>
 <build>
 <plugins>
-<plugin>
-<groupId>org.springframework.boot</groupId>
-<artifactId>spring-boot-maven-plugin</artifactId>
-</plugin>
+    <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+    </plugin>
+    <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.10.0.2594</version>
+    </plugin>
 </plugins>
 </build>
 </project>
